@@ -13,6 +13,25 @@ sidebarBtn.addEventListener("click", () => {
   elementToggleFunc(sidebar);
 });
 
+// Show/Hide Contacts functionality
+const sidebarInfoMore = document.querySelector(".sidebar-info_more");
+const sidebarBtnText = sidebarBtn.querySelector("span");
+
+sidebarBtn.addEventListener("click", () => {
+  const isOpen = sidebarInfoMore.classList.toggle("active");
+  sidebarInfoMore.hidden = !isOpen;
+  sidebarBtnText.textContent = isOpen ? "Hide Contacts" : "Show Contacts";
+});
+
+// Close contacts when clicking outside of sidebar
+document.addEventListener("click", (event) => {
+  if (!sidebar.contains(event.target) && sidebarInfoMore.classList.contains("active")) {
+    sidebarInfoMore.classList.remove("active");
+    sidebarInfoMore.hidden = true;
+    sidebarBtnText.textContent = "Show Contacts";
+  }
+});
+
 // Testimonials modal variables
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
