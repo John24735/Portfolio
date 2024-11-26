@@ -115,15 +115,21 @@ const pages = document.querySelectorAll("[data-page]");
 
 navigationLinks.forEach(link => {
   link.addEventListener("click", () => {
+    // Remove active class from all links and pages
+    navigationLinks.forEach(navLink => navLink.classList.remove("active"));
+    pages.forEach(page => page.classList.remove("active"));
+
+    // Add active class to the clicked link and corresponding page
+    link.classList.add("active");
+
+    // Show the corresponding page
     pages.forEach(page => {
       if (link.textContent.toLowerCase() === page.dataset.page) {
         page.classList.add("active");
-        link.classList.add("active");
-        window.scrollTo(0, 0); // Scroll to the top of the page
-      } else {
-        page.classList.remove("active");
-        link.classList.remove("active");
       }
     });
+
+    // Scroll to the top of the page
+    window.scrollTo(0, 0);
   });
 });
