@@ -476,6 +476,10 @@ main {
   transition: var(--transition-2);
 }
 
+.sidebar-info_more a {
+  color: var(--white-1);
+}
+
 .sidebar.active .sidebar-info_more {
   opacity: 1;
   visibility: visible;
