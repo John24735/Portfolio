@@ -2083,6 +2083,8 @@ textarea.form-input::-webkit-resizer {
 
 
 
+
+
   /**
    * MAIN 
    */
@@ -2097,9 +2099,7 @@ textarea.form-input::-webkit-resizer {
     margin: auto;
   }
 
-  .logo-2 {
-    display: none;
-  }
+
 
   /**
    * NAVBAR
