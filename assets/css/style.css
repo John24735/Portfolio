@@ -193,51 +193,20 @@ body {
   padding: 4px;
 }
 
-/* .logo {
+.logo {
   display: flex;
   margin-left: 20px;
 }
 
 .logo img {
+  cursor: pointer;
   width: auto;
   max-width: 130px;
   height: auto;
-} */
-
-.logo {
-  font-family: 'Arial', sans-serif;
-  /* Use a clean font */
-  font-size: 1.5rem;
-  /* Adjust font size */
-  font-weight: bold;
-  /* Make the text bold */
-  color: #f06a10;
-  /* Set the logo text color */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  /* Add a subtle shadow */
-/*   padding: 10px 20px; */
-  /* Add some padding */
-/*   background-color: #393e46; */
-  /* Add a background color */
-  border-radius: 8px;
-  cursor: pointer;
-  /* Round the corners */
-  display: inline-block;
-  /* Keep it inline */
-  margin-left: 20px;
-  /* Add space from the left */
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  /* Add hover animation */
 }
 
-.logo:hover {
-/*   background-color: #f06a10; */
-  /* Change background on hover */
-/*   color: #fff; */
-  /* Change text color on hover */
-/*   transform: scale(1.1); */
-  /* Slightly enlarge on hover */
-}
+
+
 
 
 
